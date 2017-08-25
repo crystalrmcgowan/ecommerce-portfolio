@@ -8,31 +8,25 @@ export default class BaseLayout extends Component {
         <nav>
           <ul>
             <li>
-              <NavLink activeClassName="selected" to="/about">
-                About
-              </NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/services">
-                Services
-              </NavLink>
+              <NavLink to="/apparel">Apparel</NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/portfolio">
-                Portfolio
-              </NavLink>
+              <NavLink to="/bodyParts">Body Parts</NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/references">
-                References
-              </NavLink>
+              <NavLink to="/experiences">Experiences</NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/contact">
-                Contact Me
-              </NavLink>
+              <NavLink to="/food">Food</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
+          {this.props.children}
         </nav>
       </div>
     )
